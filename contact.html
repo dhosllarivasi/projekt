@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Vjosa | Plan Your Visit</title>
+  <!-- css bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- css ikona fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- css jone -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/river.png" alt="Vjosa logo">Vjosa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"> Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-primary btn-sm" href="#contact-form">Plan a visit</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/river.png" class="d-block w-100" alt="Vjosa river landscape">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <span class="eyebrow mb-2 text-white">Wild river</span>
+          <h1 class="display-4 fw-bold">Explore the Vjosa</h1>
+          <p class="fs-5">A free-flowing journey through unforgettable landscapes.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/enterteinment.jpg" class="d-block w-100" alt="Outdoor adventure">
+        <div class="carousel-caption d-none d-md-block text-center">
+          <span class="eyebrow mb-2 text-white">Outdoor life</span>
+          <h2 class="display-5 fw-bold">Adventure starts here</h2>
+          <p class="fs-5">Walk, paddle and discover the region at your own pace.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/river.png" class="d-block w-100" alt="Clear water and nature">
+        <div class="carousel-caption d-none d-md-block text-end">
+          <span class="eyebrow mb-2 text-white">Local stories</span>
+          <h2 class="display-5 fw-bold">Meet the people</h2>
+          <p class="fs-5">Experience warm Albanian hospitality along the river.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </header>
+  <main>
+  <section class="section-padding">
+    <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-7">
+        <div class="contact-card" id="contact-form">
+        <span class="eyebrow mb-3">Send a message</span>
+        <h2 class="display-6 fw-bold mb-4">Plan your next visit</h2>
+        <form id="contactForm" novalidate>
+          <div class="row g-3">
+          <div class="col-sm-6 mb-1">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstname" name="firstname" required>
+          </div>
+          <div class="col-sm-6 mb-1">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastname" name="lastname" required>
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="col-12">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-dark">Send message</button>
+            <div id="formStatus" class="mt-3" role="status"></div>
+          </div>
+          </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="contact-card">
+        <span class="eyebrow mb-3">Contact details</span>
+        <h2 class="h3 fw-bold mb-4">We would love to hear from you</h2>
+        <div class="d-grid gap-3">
+          <a href="mailto:info@gmail.com" class="contact-link"><i class="fa-solid fa-envelope text-primary"></i><span><small class="d-block text-secondary">Email</small><strong>info@gmail.com</strong></span></a>
+          <a href="tel:+098763332" class="contact-link"><i class="fa-solid fa-phone text-primary"></i><span><small class="d-block text-secondary">Phone</small><strong>098 763 332</strong></span></a>
+        </div>
+        <div class="d-flex gap-2 mt-4">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  </main>
+  <footer class="site-footer"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><span>Vjosa travel</span><span>&copy; <span id="viti"></span> All rights reserved</span></div></footer>
+
+  <!-- js e bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- js jone -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
